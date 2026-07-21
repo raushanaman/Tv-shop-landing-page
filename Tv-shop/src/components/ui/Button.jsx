@@ -14,6 +14,8 @@ const Button = ({
         secondary: "bg-gray-100 text-gray-900 hover:bg-gray-200 active:scale-95",
 
         outline: "border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white",
+
+        danger: "bg-red-700 text-white hover:bg-red-900 active: scale-95",
     };
 
     return (
