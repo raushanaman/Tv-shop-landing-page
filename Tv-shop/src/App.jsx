@@ -34,8 +34,8 @@ const App = () => {
   </section>
   */}
   <Hero/>
-  <HeroContent/>
-  <HeroImage/>
+  {/* <HeroContent/>
+  <HeroImage/> */}
   </main> 
 
       </>
