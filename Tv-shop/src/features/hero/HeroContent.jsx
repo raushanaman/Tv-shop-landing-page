@@ -1,6 +1,6 @@
 import Button from "../../components/ui/Button";
 import HeroButtons from "./HeroButtons";
-import HeroRatings from "./HeroRatings";
+import Rating from "../../components/ui/Rating";
 import HeroFeatures from "./HeroFeatures";
 
 const HeroContent = () => {
@@ -28,7 +28,7 @@ const HeroContent = () => {
 
       {/* Buttons */}
       <HeroButtons/>
-      <HeroRatings/>
+      <Rating/>
 
       {/* Features */}
       <HeroFeatures/>
