@@ -1,6 +1,7 @@
 import tv1 from "../assets/images/tv2.png";
 import tv2 from "../assets/images/tv3.png";
 import tv3 from "../assets/images/tv4.png";
+import TV5 from "../assets/images/tv5.png"; 
 
 const tvProducts = [
   {
@@ -38,6 +39,19 @@ const tvProducts = [
     totalReviews: 310,
     badge: "Top Rated",
     image: tv3,
+  },
+
+  {
+    id: 4,
+    name: "Sony Bravia OLED",
+    category:"OLED",
+    brand: "Sony",
+    price: 129999,
+    oldPrice: 149999,
+    rating: 4.8,
+    totalReviews: 308,
+    badge: "Top Rated",
+    image: TV5,
   },
 ];
 
