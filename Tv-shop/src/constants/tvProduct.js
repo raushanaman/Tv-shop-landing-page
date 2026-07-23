@@ -6,6 +6,7 @@ const tvProducts = [
   {
     id: 1,
     name: "Samsung Neo QLED 65”",
+    category:"QLED",
     brand: "Samsung",
     price: 129999,
     oldPrice: 149999,
@@ -17,6 +18,7 @@ const tvProducts = [
   {
     id: 2,
     name: "Sony Bravia XR 55”",
+    category:"QLED",
     brand: "Sony",
     price: 99999,
     oldPrice: 119999,
@@ -28,6 +30,7 @@ const tvProducts = [
   {
     id: 3,
     name: "LG OLED Evo 65”",
+    category:"OLED",
     brand: "LG",
     price: 139999,
     oldPrice: 159999,

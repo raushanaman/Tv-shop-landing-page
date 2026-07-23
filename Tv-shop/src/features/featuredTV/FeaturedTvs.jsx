@@ -1,9 +1,20 @@
+import { useState } from "react";
+
 import Container from "../../components/ui/Container";
 import SectionTitle from "../../components/ui/SectionTitle";
 import TVCard from "./TVCard";
 import tvProducts from "../../constants/tvProduct";
 
+import FilterBar from "./FilterBar";
+
 const FeaturedTvs = () => {
+
+    const [selectedCategory, setSelectedCategory]=useState("All");
+
+    const filteredProducts = selectedCategory ==="All"?tvProducts
+    :tvProducts.filter((product)=>product.category===selectedCategory);
+    console.log("Selected:", selectedCategory);
+console.log("Products:", filteredProducts);
     return (
         <section className="py-24">
 
@@ -12,9 +23,14 @@ const FeaturedTvs = () => {
                 <SectionTitle title="Featured Smart TVs"
                 subtitle="Explore our premium collection of Smart TVs from top brands."/>
 
+                <FilterBar 
+                    selectedCategory={selectedCategory}
+                    onCategoryChange={setSelectedCategory}
+                />
+
                 <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-                    {tvProducts.map((product)=>(
+                    {filteredProducts.map((product)=>(
                         <TVCard key={product.id}
                         product={product}/>
                     ))}
