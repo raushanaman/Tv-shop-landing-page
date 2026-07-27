@@ -9,7 +9,7 @@ import HeroContent from "./features/hero/HeroContent";
 import HeroImage from "./features/hero/HeroImage";
 import FeaturedTvs from "./features/featuredTV/FeaturedTvs";
 import Categories from "./features/categories/Categories";
-
+import TopBrands from "./features/brands/TopBrands";
 const App = () => {
   return(
     <>
@@ -18,6 +18,7 @@ const App = () => {
   <Hero/>
   <FeaturedTvs/>
   <Categories/>
+  <TopBrands />
   {/* </main>  */}
 
       </>
