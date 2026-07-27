@@ -77,13 +77,29 @@ const FeaturedTvs = () => {
                         onSort={setSortBy}
                     />
 
+                    <p className="mt-3 text-sm text-slate-500">
+                        Showing {filteredProducts.length} result
+                        {filteredProducts.length !== 1 && "s"}
+                    </p>
+
                 </div>
 
                 <FilterBar
                     selectedCategory={selectedCategory}
                     onCategoryChange={setSelectedCategory}
                 />
+                {
+                    filteredProducts.length ===0 ? (
+                        <div className="py-20 text-center">
+                            <h3 className="text-2xl font-bold">No Products Found</h3>
 
+                            <p className="mt-3 text-slate-500">
+                                Try another keyword or category.
+                            </p>
+
+                        </div>
+                    ):(
+                
                 <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
                     {filteredProducts.map((product) => (
@@ -92,7 +108,7 @@ const FeaturedTvs = () => {
                     ))}
 
 
-                </div>
+                </div>)}
             </Container>
 
         </section>

@@ -8,6 +8,7 @@ import Hero from "./features/hero/Hero"
 import HeroContent from "./features/hero/HeroContent";
 import HeroImage from "./features/hero/HeroImage";
 import FeaturedTvs from "./features/featuredTV/FeaturedTvs";
+import Categories from "./features/categories/Categories";
 
 const App = () => {
   return(
@@ -16,6 +17,7 @@ const App = () => {
     {/* <main className={`${COLORS.background} min-h-screen`}> */}
   <Hero/>
   <FeaturedTvs/>
+  <Categories/>
   {/* </main>  */}
 
       </>
