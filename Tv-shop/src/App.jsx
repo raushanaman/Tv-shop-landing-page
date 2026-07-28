@@ -11,6 +11,7 @@ import FeaturedTvs from "./features/featuredTV/FeaturedTvs";
 import Categories from "./features/categories/Categories";
 import TopBrands from "./features/brands/TopBrands";
 import WhyChoose from "./features/whyChooseUs/WhyChoose";
+import Testimonials from "./features/testimonials/Testimonials";
 
 const App = () => {
   return(
@@ -22,6 +23,7 @@ const App = () => {
   <Categories/>
   <TopBrands />
   <WhyChoose/>
+  <Testimonials/>
   {/* </main>  */}
 
       </>
