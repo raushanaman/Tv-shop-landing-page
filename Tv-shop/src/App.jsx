@@ -12,7 +12,7 @@ import Categories from "./features/categories/Categories";
 import TopBrands from "./features/brands/TopBrands";
 import WhyChoose from "./features/whyChooseUs/WhyChoose";
 import Testimonials from "./features/testimonials/Testimonials";
-
+import Offer from "./features/offers/Offer";
 const App = () => {
   return(
     <>
@@ -24,6 +24,7 @@ const App = () => {
   <TopBrands />
   <WhyChoose/>
   <Testimonials/>
+  <Offer/>
   {/* </main>  */}
 
       </>
