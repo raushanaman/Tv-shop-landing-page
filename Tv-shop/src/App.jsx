@@ -13,6 +13,7 @@ import TopBrands from "./features/brands/TopBrands";
 import WhyChoose from "./features/whyChooseUs/WhyChoose";
 import Testimonials from "./features/testimonials/Testimonials";
 import Offer from "./features/offers/Offer";
+import Newsletter from "./features/newsletter/Newsletter";
 const App = () => {
   return(
     <>
@@ -25,6 +26,7 @@ const App = () => {
   <WhyChoose/>
   <Testimonials/>
   <Offer/>
+  <Newsletter/>
   {/* </main>  */}
 
       </>
