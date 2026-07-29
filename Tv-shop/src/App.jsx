@@ -14,6 +14,7 @@ import WhyChoose from "./features/whyChooseUs/WhyChoose";
 import Testimonials from "./features/testimonials/Testimonials";
 import Offer from "./features/offers/Offer";
 import Newsletter from "./features/newsletter/Newsletter";
+import Footer from "./features/footer/Footer";
 const App = () => {
   return(
     <>
@@ -27,6 +28,7 @@ const App = () => {
   <Testimonials/>
   <Offer/>
   <Newsletter/>
+  <Footer/>
   {/* </main>  */}
 
       </>
