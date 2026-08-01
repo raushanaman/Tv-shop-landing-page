@@ -3,37 +3,31 @@ const navigationLinks =[
     {
         id:1,
         title: "Home",
-        path: "#",
+        path: "/",
     },
 
     {
         id:2,
         title: "About",
-        path: "#",
+        path: "/about",
     },
 
     {
         id:3,
         title: "Products",
-        path: "#products",
+        path: "/products",
     },
 
     {
         id:4,
         title: "Brands",
-        path: "#brands",
+        path: "/brands",
     },
 
     {
         id:5,
-        title: "Offers",
-        path: "#offers",
-    },
-
-    {
-        id:6,
         title: "Contact",
-        path: "#contact",
+        path: "/contact",
     }
 ]
 export default navigationLinks;

@@ -1,8 +1,10 @@
+
+import { NavLink } from "react-router-dom";
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 import navigationLinks from "../../constants/navigation";
 
-const Navbar = () => {
+const Header = () => {
     return (
 
         <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
@@ -22,9 +24,13 @@ const Navbar = () => {
 
                         {navigationLinks.map((link) => (
                             <li key={link.id}>
-                                <a href={link.path} className="text-sm font-medium text-slate-700 transition-colors hover:text-blue-600">
+                                <NavLink 
+                                to ={link.path}
+                                className={({isActive})=>
+                                `font-medium transition-colors duration-300  ${isActive ? "text-blue-600" : "text-slate-600 hover:text-orange-600"}`
+                                }>
                                     {link.title}
-                                </a>
+                                </NavLink>
                             </li>
                         ))}
 
@@ -42,4 +48,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar;
+export default Header;
